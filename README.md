@@ -50,7 +50,7 @@ Modules:
   #### createOrder(order)
       
   **Order** object example:
-      {
+      ```{
         "order_amount": 503341,
         "order_tax_amount": 100668,
         "order_lines": [
@@ -89,7 +89,7 @@ Modules:
             "shipping_method": "PickUpStore"
           }
         ]
-      }
+      }```
 
   Refer [Klarna Checkout documentation](https://developers.klarna.com/api/#checkout-api-create-a-new-order/) to check the order object details
 
