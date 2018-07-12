@@ -29,6 +29,11 @@ Modules:
   
   Where `KLARNA_UID` and `KLARNA_PASSWORD` are credentials from Klarna Portal => Settings => API Credentials
 
+## Environments
+  Pass `live: true` to `init()` method to use live Klarna environment. Default `live` value is `false`
+
+  Mored details about Klarna environments [Klarna Checkout documentation](https://developers.klarna.com/en/gb/kco-v3/environments/)
+
 ## klarna-checkout
 
   ### Usage
@@ -98,11 +103,11 @@ Modules:
 
   #### getOrder(orderId)
 
-    Description 2
+  [The Order object](https://developers.klarna.com/api/#checkout-api-order-object/)
 
   #### updateOrder()
 
-    Description 3
+    In Progress
 
 ## klarna-orderManagement
 
