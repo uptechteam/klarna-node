@@ -10,7 +10,7 @@ Modules:
   Checkout          | v3
   Order Management  | v1
 
-  First Header  | Second Header
+  Module        | API version
   ------------- | -------------
   Content Cell  | Content Cell
   Content Cell  | Content Cell
