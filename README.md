@@ -139,3 +139,5 @@ Take care to maintain the existing coding style. Add unit tests for any new or c
 * Order Management
   * TODO 1
   * TODO 2
+* Tests
+* CI (Travis)
