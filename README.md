@@ -32,7 +32,7 @@ Modules:
 ## Environments
   Pass `live: true` to `init()` method to use live Klarna environment. Default `live` value is `false`
 
-  Mored details about Klarna environments [Klarna Checkout documentation](https://developers.klarna.com/en/gb/kco-v3/environments/)
+  Mored details about Klarna environments [here](https://developers.klarna.com/en/gb/kco-v3/environments/)
 
 ## klarna-checkout
 
@@ -72,7 +72,7 @@ Modules:
           "total_amount": 503341,
           "total_discount_amount": 100000,
           "total_tax_amount": 100668,
-          "image_url": "http://supporter.no/img/logo.png"
+          "image_url": "http://mywebsite.com/img/logo.png"
         }
       ],
       "shipping_options": [
@@ -113,6 +113,16 @@ Modules:
 
   ### Usage
     const { klarnaOrderManagement } = require('klarna-node');
+
+  ### Methods
+
+  #### acknowledgeOrder(orderId)
+
+  Description 1
+
+  #### captureOrder(orderId)
+
+  Description 2
 
 ## Tests
   TODO
