@@ -12,8 +12,8 @@ Modules:
 
   Module        | API version
   ------------- | -------------
-  Content Cell  | Content Cell
-  Content Cell  | Content Cell
+  Checkout      | V3
+  Content Cell  | V1
 
 
 ## Installation
