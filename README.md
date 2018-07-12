@@ -49,7 +49,7 @@ Modules:
 
   #### createOrder(order)
       
-    **Order** object example:
+  **Order** object example:
       {
         "order_amount": 503341,
         "order_tax_amount": 100668,
@@ -91,7 +91,7 @@ Modules:
         ]
       }
 
-    Refer [Klarna Checkout documentation](https://developers.klarna.com/api/#checkout-api-create-a-new-order/) to check the order object details
+  Refer [Klarna Checkout documentation](https://developers.klarna.com/api/#checkout-api-create-a-new-order/) to check the order object details
 
   #### getOrder(orderId)
 
