@@ -1,0 +1,29 @@
+{
+  "name": "klarna-node",
+  "version": "0.1.0",
+  "description": "NodeJS wrapper for Klarna payment system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uptechteam/klarna-node.git"
+  },
+  "keywords": [
+    "klarna",
+    "klarna-checkout",
+    "nodejs",
+    "js",
+    "ordermanagement"
+  ],
+  "author": "“Anton <“anton.netudykhata@uptech.team”> (“uptech.team”)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uptechteam/klarna-node/issues"
+  },
+  "homepage": "https://github.com/uptechteam/klarna-node#readme",
+  "dependencies": {
+    "request-promise": "^4.2.2"
+  }
+}
