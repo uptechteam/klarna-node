@@ -47,17 +47,17 @@ Modules:
   
   ### Methods
 
-    #### createOrder
+  #### createOrder
       
-      Description 1
+    Description 1
 
-    #### getOrder
+  #### getOrder
 
-      Description 2
+    Description 2
 
-    #### updateOrder
+  #### updateOrder
 
-      Description 3
+    Description 3
 
 ## klarna-orderManagement
 
