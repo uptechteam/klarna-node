@@ -47,15 +47,57 @@ Modules:
   
   ### Methods
 
-  #### createOrder
+  #### createOrder(order)
       
-    Description 1
+    Order object example:
+      {
+        "order_amount": 503341,
+        "order_tax_amount": 100668,
+        "order_lines": [
+          {
+            "type": "physical",
+            "reference": "19-402-SWE",
+            "name": "Camera Travel Set",
+            "quantity": 1,
+            "quantity_unit": "pcs",
+            "unit_price": 603341,
+            "tax_rate": 2500,
+            "total_amount": 503341,
+            "total_discount_amount": 100000,
+            "total_tax_amount": 100668,
+            "image_url": "http://supporter.no/img/logo.png"
+          }
+        ],
+        "shipping_options": [
+          {
+            "id": "free_shipping",
+            "name": "Free Shipping",
+            "description": "Delivers in 5-7 days",
+            "price": 0,
+            "tax_amount": 0,
+            "tax_rate": 0,
+            "preselected": true,
+            "shipping_method": "Home"
+          },
+          {
+            "id": "pick_up_store",
+            "name": "Pick up at closest store",
+            "price": 399,
+            "tax_amount": 0,
+            "tax_rate": 0,
+            "preselected": false,
+            "shipping_method": "PickUpStore"
+          }
+        ]
+      }
 
-  #### getOrder
+    Refer documentation to check the order object details
+
+  #### getOrder(orderId)
 
     Description 2
 
-  #### updateOrder
+  #### updateOrder()
 
     Description 3
 
