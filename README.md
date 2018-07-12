@@ -44,6 +44,20 @@ Modules:
         confirmation: 'http://mywebsite.com/success/?sid={checkout.order.id}',
         push: 'https://api.mywebsite.com/checkout/webhook?checkout_uri={checkout.order.id}',
     });
+  
+  ### Methods
+
+    #### createOrder
+      
+      Description 1
+
+    #### getOrder
+
+      Description 2
+
+    #### updateOrder
+
+      Description 3
 
 ## klarna-orderManagement
 
