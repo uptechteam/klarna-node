@@ -5,10 +5,6 @@ Klarna Node.Js
 Node JS wrapper for Klarna payments system (Checkout, Order Management)
 
 Modules:
-  Module            | Api version
-  ----------------- | -----------------
-  Checkout          | v3
-  Order Management  | v1
 
   Module        | API version
   ------------- | -------------
