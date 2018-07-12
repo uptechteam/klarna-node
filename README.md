@@ -49,7 +49,9 @@ Modules:
 
   #### createOrder(order)
       
-    **Order** object example:
+  **Order** object example:
+
+
     {
       "order_amount": 503341,
       "order_tax_amount": 100668,
