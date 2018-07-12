@@ -13,7 +13,7 @@ Modules:
   Module        | API version
   ------------- | -------------
   Checkout      | V3
-  Content Cell  | V1
+  Order Management  | V1
 
 
 ## Installation
