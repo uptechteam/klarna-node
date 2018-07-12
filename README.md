@@ -60,4 +60,8 @@ Take care to maintain the existing coding style. Add unit tests for any new or c
 
 ## TODO
 
-In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
+* Checkout
+  * Update Order
+* Order Management
+  * TODO 1
+  * TODO 2
