@@ -1,6 +1,6 @@
 {
   "name": "klarna-node",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NodeJS wrapper for Klarna payment system",
   "main": "index.js",
   "scripts": {
