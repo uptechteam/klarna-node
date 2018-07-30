@@ -65,7 +65,7 @@ const options = (data, id) => {
 
   return {
     url: !id ? url : `${url}/${id}`,
-    method: id ? 'GET' : 'POST',
+    method: !data ? 'GET' : 'POST',
     body,
     headers: headers(),
     json: data != null,
@@ -82,8 +82,9 @@ const getOrder = async (id) => {
   return res;
 };
 
-const updateOrder = () => {
-
+const updateOrder = async (id, order) => {
+  const res = await requestPromise(options(order, id));
+  return res;
 };
 
 module.exports = {

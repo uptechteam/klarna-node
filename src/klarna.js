@@ -8,7 +8,6 @@
 
 const flags = {
   live: false,
-  initalized: false, // TODO complete this logic
 };
 
 const credentials = {
@@ -31,10 +30,6 @@ const init = (input) => {
   if ((input.live != null) && typeof input.live === 'boolean') {
     flags.live = input.live;
   }
-  if ((input.uid != null) && (input.password != null)) {
-    flags.initalized = true;
-  }
-
   return null;
 };
 
