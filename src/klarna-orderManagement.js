@@ -24,6 +24,9 @@ const urlBuilder = (action, orderId) => {
     case 'capture':
       url = `${base}/${orderId}/captures`;
       break;
+    case 'get':
+      url = `${base}/${orderId}`;
+      break;
     default:
       url = '';
   }
@@ -64,7 +67,13 @@ const captureOrder = async (data, id) => {
   return res;
 };
 
+const getOrder = async(id) => {
+  const optionsObj = options('get', {method:'GET'}, id);
+  const res = await requestPromise(optionsObj);
+  return res;
+}
 module.exports = {
   acknowledgeOrder,
   captureOrder,
+  getOrder,
 };
