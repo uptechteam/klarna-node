@@ -118,11 +118,22 @@ Modules:
 
   #### acknowledgeOrder(orderId)
 
-  Description 1
+  https://developers.klarna.com/api/#order-management-api-acknowledge-order
 
   #### captureOrder(orderId)
 
-  Description 2
+  https://developers.klarna.com/api/#order-management-api-get-capture
+
+  ### getOrder(orderId)
+
+  Retrieves the submittet order from Klarna
+
+  ### updateReferences(orderId, reference1, reference2)
+  reference1 : New merchant reference 1. Old reference will be overwritten if this field is present.
+  reference2: New merchant reference 2. Old reference will be overwritten if this field is present.
+  https://developers.klarna.com/api/#order-management-api-update-merchant-references
+
+  Can be used to track own orderId´s in Klarna.
 
 ## Tests
   TODO
@@ -130,7 +141,7 @@ Modules:
 
 ## Contributing
 
-Take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code. Create a PR to `develop` brunch of current repo.
+Take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code. Create a PR to `develop` branch of current repo.
 
 ## TODO
 

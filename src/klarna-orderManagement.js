@@ -27,6 +27,9 @@ const urlBuilder = (action, orderId) => {
     case 'get':
       url = `${base}/${orderId}`;
       break;
+    case 'updateReferences':
+      url = `${base}/${orderId}/merchant-references`;
+      break;
     default:
       url = '';
   }
@@ -58,7 +61,7 @@ const acknowledgeOrder = async (id) => {
 };
 
 /**
- * Create caprute order API
+ * Create capture order API
  * POST method
  * @param data Object with property `captured_amount`
  */
@@ -69,11 +72,24 @@ const captureOrder = async (data, id) => {
 
 const getOrder = async(id) => {
   const optionsObj = options('get', {method:'GET'}, id);
+  console.log(JSON.stringify(optionsObj));
   const res = await requestPromise(optionsObj);
   return res;
 }
+
+const updateReferences = async (id, reference1, reference2) => {
+  const optionsObj = options('updateReferences', {
+    method: 'PATCH',
+    merchant_reference1: reference1,
+    merchant_reference2: reference2
+  }, id);
+  const res = await requestPromise(optionsObj);
+  return res;
+}
+
 module.exports = {
   acknowledgeOrder,
   captureOrder,
   getOrder,
+  updateReferences
 };
