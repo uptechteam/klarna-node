@@ -3,7 +3,7 @@
  *
  * @author Anton Netudykhata
  * Support email: anton.netudykhata@uptech.team
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 const { flags, headers } = require('./klarna');
@@ -32,12 +32,17 @@ const urlBuilder = (action, orderId) => {
 
 const options = (action, data, id) => {
   const url = urlBuilder(action, id);
-
-  const body = data ? Object.assign(data) : null;
+  // omit method from data obj if present
+  let = {
+      method,
+      ...dataCleaned
+    } = data;
+  const body = dataCleaned ? Object.assign(dataCleaned) : null;
+  console.log(dataCleaned)
 
   return {
     url,
-    method: data ? 'POST' : 'GET',
+    method: data.method ? data.method : data ? 'POST': 'GET',
     body,
     headers: headers(),
     json: data != null,
