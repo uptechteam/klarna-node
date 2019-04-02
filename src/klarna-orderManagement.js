@@ -30,6 +30,9 @@ const urlBuilder = (action, orderId) => {
     case 'updateReferences':
       url = `${base}/${orderId}/merchant-references`;
       break;
+    case 'cancel':
+      url = `${base}/${orderId}/cancel`;
+      break;
     default:
       url = '';
   }
@@ -71,9 +74,7 @@ const captureOrder = async (data, id) => {
 };
 
 const getOrder = async(id) => {
-  const optionsObj = options('get', {method:'GET'}, id);
-  console.log(JSON.stringify(optionsObj));
-  const res = await requestPromise(optionsObj);
+  const res = await requestPromise(options('get', {method:'GET'}, id));
   return res;
 }
 
@@ -87,9 +88,15 @@ const updateReferences = async (id, reference1, reference2) => {
   return res;
 }
 
+const cancelOrder = async (id) => {
+  const res = await requestPromise(options('cancel', {}, id));
+  return res;
+};
+
 module.exports = {
   acknowledgeOrder,
   captureOrder,
   getOrder,
-  updateReferences
+  updateReferences,
+  cancelOrder
 };
