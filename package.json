@@ -1,6 +1,6 @@
 {
   "name": "@procare/klarna",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS wrapper for Klarna payment system",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/uptechteam/klarna-node#readme",
   "dependencies": {
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.4"
   }
 }
