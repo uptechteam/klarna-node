@@ -27,7 +27,7 @@ const init = (input) => {
   if (input.password != null) {
     credentials.password = input.password;
   }
-  if ((input.live != null) && (input.live.toLowerCase() === 'true')) {
+  if ((input.live != null) && (input.live.toString().toLowerCase() === 'true')) {
     flags.live = true;
   }
   return null;

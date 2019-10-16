@@ -1,6 +1,6 @@
 {
   "name": "@procare/klarna",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NodeJS wrapper for Klarna payment system",
   "main": "index.js",
   "scripts": {
