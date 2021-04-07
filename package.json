@@ -1,6 +1,6 @@
 {
-  "name": "klarna-node",
-  "version": "0.1.2",
+  "name": "@procare/klarna",
+  "version": "1.0.3",
   "description": "NodeJS wrapper for Klarna payment system",
   "main": "index.js",
   "scripts": {
@@ -20,10 +20,11 @@
   "author": "“Anton <“anton.netudykhata@uptech.team”> (“uptech.team”)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uptechteam/klarna-node/issues"
+    "url": "https://github.com/LarsBuur/procare-pricing/issues"
   },
   "homepage": "https://github.com/uptechteam/klarna-node#readme",
   "dependencies": {
-    "request-promise": "^4.2.2"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.6"
   }
 }
